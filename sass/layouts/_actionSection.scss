@@ -1,0 +1,75 @@
+@import "../abstracts/mixins";
+.rightSide {
+  width: 55%;
+  &_header {
+    margin: 70px 80px 0 60px;
+    display: flex;
+    justify-content: space-between;
+    &-content {
+      @include word-style(400, 18px, #8692a6);
+      margin-left: auto;
+      a {
+        color: #1565d8;
+        cursor: pointer;
+      }
+      a:visited {
+        color: #1565d8;
+      }
+    }
+    &-leftWrapper {
+      display: flex;
+    }
+  }
+  &_actionSection {
+    margin: 135px 220px 0 135px;
+    &--margin {
+      margin-top: 70px;
+    }
+  }
+  &_title {
+    @include word-style(700, 30px, #000000);
+    margin-bottom: 10px;
+  }
+  &_subContent {
+    @include word-style(400, 18px, #8692a6);
+    max-width: 410px;
+    margin-bottom: 35px;
+    line-height: 28px;
+  }
+}
+.card {
+  max-width: 430px;
+  display: flex;
+  align-items: center;
+  padding: 26px 33px 25px 28px;
+  background: #ffffff;
+  box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  margin-bottom: 28px;
+  &--blue {
+    background: #f5f9ff;
+    border: 1px solid #1565d8;
+    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.04);
+  }
+  &_contentWrapper {
+    margin-left: 28px;
+    &-title {
+      @include word-style(500, 16px, #000000);
+    }
+    &-content {
+      @include word-style(400, 14px, #8692a6);
+      max-width: 239px;
+    }
+  }
+  &_arrow {
+    margin-left: auto;
+  }
+}
+.img-wrapper {
+  position: relative;
+  &_imgCenter {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+}
